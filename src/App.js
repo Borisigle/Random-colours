@@ -30,6 +30,8 @@ const Boton = styled.button `
     color: #FFF;
     transition : 0.8s;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
 
     &:hover {
         color: black;
