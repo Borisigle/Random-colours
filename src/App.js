@@ -27,7 +27,13 @@ const Boton = styled.button `
     border: 1px solid #FFF;
     font-size: 1rem;
     padding: 10px 20px;
-    color: #FFF;    
+    color: #FFF;
+    transition : 0.8s;
+    cursor: pointer;
+
+    &:hover {
+        color: black;
+    }    
 `
 ;
 
