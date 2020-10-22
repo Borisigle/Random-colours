@@ -675,8 +675,7 @@ const Paleta = () => {
 
 
     const ContenedorPaleta = styled.div `
-        display: flex;
-        max-width: 100%;
+ 
     `;
 
     const Color = styled.div `
@@ -690,11 +689,9 @@ const Paleta = () => {
     return (
 
             <ContenedorPaleta>
-                <Color></Color>
-                <Color></Color>
-                <Color></Color>
-                <Color></Color>
-                <Color></Color>
+                    {colores.map(color => (
+                        <div style={{width: 'auto', backgroundColor: color.hex}}>{color.name}</div>
+                    ))}
             </ContenedorPaleta>
     );
 }
